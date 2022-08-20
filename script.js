@@ -1,8 +1,12 @@
+const { formSubmission } = require("./scriptHelper");
+
 window.addEventListener("load", function () {
+
     let form = document.querySelector("form");
     let list = document.querySelector("#faultyItems");
+    console.log(list);
     list.style.visibility = "hidden";
-    
+
     form.addEventListener("submit", function (event) {
         event.preventDefault();
         let pilot = document.querySelector("input[name=pilotName]").value;
