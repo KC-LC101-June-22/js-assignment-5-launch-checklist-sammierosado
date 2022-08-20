@@ -31,14 +31,14 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     }
     if (fuelLevel < 10000) {
         document.querySelector("#launchStatus").innerHTML = `Shuttle Not Ready for Launch`;
-        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78)";
+        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78);";
         document.querySelector("#faultyItems").style.visibility = "visible";
         document.getElementById("pilotStatus").innerHTML = `Pilot ${pilot} is ready for launch`;
         document.querySelector("#copilotStatus").innerHTML = `Co-pilot ${copilot} is ready for launch`;
         document.querySelector("#fuelStatus").innerHTML = `Fuel level too low for launch`;
     } else if (cargoLevel > 10000) {
         document.querySelector("#launchStatus").innerHTML = `Shuttle Not Ready for Launch`;
-        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78)";
+        document.querySelector("#launchStatus").style.color = "rgb(199, 37, 78);";
         document.querySelector("#faultyItems").style.visibility = "visible";
         document.getElementById("pilotStatus").innerHTML = `Pilot ${pilot} is ready for launch`;
         document.querySelector("#copilotStatus").innerHTML = `Co-pilot ${copilot} is ready for launch`;
