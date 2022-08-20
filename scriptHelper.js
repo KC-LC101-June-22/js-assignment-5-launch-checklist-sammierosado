@@ -30,13 +30,14 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         alert("Make sure to enter valid information for each field!");
     }
     if (fuelLevel < 10000) {
-        document.querySelector("#launchStatus").innerHTML = `<h2 style="color:red">Shuttle Not Ready for Launch</h2>`;
+        document.querySelector("#launchStatus").innerHTML = `<h2 style="color:rgb(199, 37, 78)">Shuttle Not Ready for Launch</h2>`;
         document.querySelector("#faultyItems").style.visibility = "visible";
         document.getElementById("pilotStatus").innerHTML = `Pilot ${pilot} is ready for launch`;
         document.querySelector("#copilotStatus").innerHTML = `Co-pilot ${copilot} is ready for launch`;
         document.querySelector("#fuelStatus").innerHTML = `Fuel level too low for launch`;
+
     } else if (cargoLevel > 10000) {
-        document.querySelector("#launchStatus").innerHTML = `<h2 style="color:red">Shuttle Not Ready for Launch</h2>`;
+        document.querySelector("#launchStatus").innerHTML = `<h2 style="color:rgb(199, 37, 78)">Shuttle Not Ready for Launch</h2>`;
         document.querySelector("#faultyItems").style.visibility = "visible";
         document.getElementById("pilotStatus").innerHTML = `Pilot ${pilot} is ready for launch`;
         document.querySelector("#copilotStatus").innerHTML = `Co-pilot ${copilot} is ready for launch`;
